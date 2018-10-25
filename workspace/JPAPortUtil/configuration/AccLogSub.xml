@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ACCLOGSUB">
+		<ForeignKey parentTableName="ACCLOGMAIN">
+			<Member columnName="ACCLOGMAIN_ID" referencedColumnName="ACCLOGMAIN_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

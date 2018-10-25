@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2014, 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="CATALOGDSC">
+		<Column columnName="NAME" type="VARCHAR" length="254" nullable="false"/>
+		<ForeignKey parentTableName="CATALOG">
+			<Member columnName="CATALOG_ID" referencedColumnName="CATALOG_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

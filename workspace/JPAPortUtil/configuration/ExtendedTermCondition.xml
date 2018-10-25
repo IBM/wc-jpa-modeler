@@ -1,0 +1,23 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="TERMCOND">
+		<Column columnName="TCSUBTYPE_ID" nullable="false"/>
+		<Column columnName="STRINGFIELD1" type="VARCHAR" length="3200" nullable="true"/>
+		<ForeignKey parentTableName="TRADING">
+			<Member columnName="TRADING_ID" referencedColumnName="TRADING_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

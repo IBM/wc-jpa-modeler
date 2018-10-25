@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="OFFER">
+		<ForeignKey parentTableName="TRADEPOSCN">
+			<Member columnName="TRADEPOSCN_ID" referencedColumnName="TRADEPOSCN_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

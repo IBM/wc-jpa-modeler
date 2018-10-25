@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ORDCHGRSNDS">
+		<ForeignKey parentTableName="ORDCHGRSN">
+			<Member columnName="ORDCHGRSN_ID" referencedColumnName="ORDCHGRSN_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

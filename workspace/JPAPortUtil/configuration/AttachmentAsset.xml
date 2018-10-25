@@ -1,0 +1,22 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="ATCHAST">
+		<Column columnName="ATCHASTPATH" type="VARCHAR" length="256" nullable="true"/>
+		<ForeignKey parentTableName="ATCHTGT">
+			<Member columnName="ATCHTGT_ID" referencedColumnName="ATCHTGT_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

@@ -1,0 +1,22 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="MSGARCHIVE">
+		<Column columnName="MESSAGE" type="BLOB" length="1000000" nullable="true"/>
+		<ForeignKey parentTableName="TRANSPORT">
+			<Member columnName="TRANSPORT_ID" referencedColumnName="TRANSPORT_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

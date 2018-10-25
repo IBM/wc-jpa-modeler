@@ -1,0 +1,31 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="RADETAIL">
+		<ForeignKey parentTableName="FFMCENTER">
+			<Member columnName="FFMCENTER_ID" referencedColumnName="FFMCENTER_ID"/>
+		</ForeignKey>
+	</Table>
+	<Table tableName="RADETAIL">
+		<ForeignKey parentTableName="ITEMSPC">
+			<Member columnName="ITEMSPC_ID" referencedColumnName="ITEMSPC_ID"/>
+		</ForeignKey>
+	</Table>
+	<Table tableName="RADETAIL">
+		<ForeignKey parentTableName="RA">
+			<Member columnName="RA_ID" referencedColumnName="RA_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

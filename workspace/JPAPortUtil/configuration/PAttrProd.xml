@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="PATTRPROD">
+		<ForeignKey parentTableName="PATTRIBUTE">
+			<Member columnName="PATTRIBUTE_ID" referencedColumnName="PATTRIBUTE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

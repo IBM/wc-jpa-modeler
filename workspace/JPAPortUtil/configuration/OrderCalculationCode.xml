@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ORDCALCD">
+		<ForeignKey parentTableName="CALCODE">
+			<Member columnName="CALCODE_ID" referencedColumnName="CALCODE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

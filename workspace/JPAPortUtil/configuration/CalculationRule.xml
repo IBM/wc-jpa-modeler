@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="CALRULE">
+		<Column columnName="CALMETHOD_ID_QFY" nullable="false"/>
+		<Column columnName="CALMETHOD_ID" nullable="false"/>
+		<Column columnName="COMBINATION" nullable="false"/>
+		<ForeignKey parentTableName="CALCODE">
+			<Member columnName="CALCODE_ID" referencedColumnName="CALCODE_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="CALMETHOD">
+			<Member columnName="CALMETHOD_ID_QFY" referencedColumnName="CALMETHOD_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="CALMETHOD">
+			<Member columnName="CALMETHOD_ID" referencedColumnName="CALMETHOD_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

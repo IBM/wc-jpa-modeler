@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="STORE">
+		<Column columnName="ALLOCATIONGOODFOR" nullable="false"/>
+		<Column columnName="ALLOCATIONOFFSET" nullable="false"/>
+		<Column columnName="BLKEXTASYNCH" nullable="false"/>
+		<ForeignKey parentTableName="LANGUAGE">
+			<Member columnName="LANGUAGE_ID" referencedColumnName="LANGUAGE_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="CONTRACT">
+			<Member columnName="CRTDBYCNTR_ID" referencedColumnName="CONTRACT_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="STORECGRY">
+			<Member columnName="STORECGRY_ID" referencedColumnName="STORECGRY_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="STOREGRP">
+			<Member columnName="STOREGRP_ID" referencedColumnName="STOREGRP_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

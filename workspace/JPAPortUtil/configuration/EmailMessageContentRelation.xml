@@ -1,0 +1,26 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="EMLMCREL">
+		<ForeignKey parentTableName="EMLCONTENT">
+			<Member columnName="EMLCONTENT_ID" referencedColumnName="EMLCONTENT_ID"/>
+		</ForeignKey>
+	</Table>
+	<Table tableName="EMLMCREL">
+		<ForeignKey parentTableName="EMLMSG">
+			<Member columnName="EMLMSG_ID" referencedColumnName="EMLMSG_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

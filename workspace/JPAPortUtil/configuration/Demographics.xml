@@ -1,0 +1,22 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="USERDEMO">
+		<Column columnName="DATEOFBIRTH" type="DATE" length="10" nullable="true"/>
+		<ForeignKey parentTableName="USERS">
+			<Member columnName="USERS_ID" referencedColumnName="USERS_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

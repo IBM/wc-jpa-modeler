@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="ORDRELEASE">
+		<Column columnName="PACKSLIPXML" type="CLOB" length="1000000000" nullable="true"/>
+		<Column columnName="EXTREF" type="VARCHAR" length="2048" nullable="true"/>
+		<Column columnName="ISEXPEDITED" nullable="false"/>
+		<ForeignKey parentTableName="FFMCENTER">
+			<Member columnName="FFMCENTER_ID" referencedColumnName="FFMCENTER_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="PICKBATCH">
+			<Member columnName="PICKBATCH_ID" referencedColumnName="PICKBATCH_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="SHIPMODE">
+			<Member columnName="SHIPMODE_ID" referencedColumnName="SHIPMODE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

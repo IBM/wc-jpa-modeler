@@ -1,0 +1,21 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="PATTRDESC">
+		<ForeignKey parentTableName="PATTRIBUTE">
+			<Member columnName="PATTRIBUTE_ID" referencedColumnName="PATTRIBUTE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

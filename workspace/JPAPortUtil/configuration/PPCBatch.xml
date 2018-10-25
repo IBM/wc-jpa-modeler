@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="PPCBATCH">
+		<ForeignKey parentTableName="MERCHCONF">
+			<Member columnName="MERCHCONF_ID" referencedColumnName="MERCHCONF_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

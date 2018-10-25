@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="DISTARRANG">
+		<Column columnName="WHOLESALESTORE_ID" nullable="false"/>
+		<Column columnName="MERCHANTSTORE_ID" nullable="false"/>
+		<Column columnName="STARTDATE" nullable="false"/>
+		<Column columnName="ENDDATE" nullable="false"/>
+		<ForeignKey parentTableName="BASEITEM">
+			<Member columnName="BASEITEM_ID" referencedColumnName="BASEITEM_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ACORGPOL">
+		<ForeignKey parentTableName="ACPOLICY">
+			<Member columnName="ACPOLICY_ID" referencedColumnName="ACPOLICY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

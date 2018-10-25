@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="TAXTYPE">
+		<Column columnName="SEQUENCE" nullable="false"/>
+		<ForeignKey parentTableName="TXCDSCHEME">
+			<Member columnName="TXCDSCHEME_ID" referencedColumnName="TXCDSCHEME_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

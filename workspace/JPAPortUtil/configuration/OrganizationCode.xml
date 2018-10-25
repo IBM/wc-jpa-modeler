@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ORGCODE">
+		<ForeignKey parentTableName="ORGENTITY">
+			<Member columnName="ORGENTITY_ID" referencedColumnName="ORGENTITY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

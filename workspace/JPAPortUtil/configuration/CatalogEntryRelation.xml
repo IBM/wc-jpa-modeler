@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2014 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<!-- The CATENTREL table is used by two entities: CatalogEntryRelation and CompositeCatalogEntry -->
+	<Table tableName="CATENTREL">
+		<ForeignKey parentTableName="CATENTRY">
+			<Member columnName="CATENTRY_ID_PARENT" referencedColumnName="CATENTRY_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="CATENTRY">
+			<Member columnName="CATENTRY_ID_CHILD" referencedColumnName="CATENTRY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

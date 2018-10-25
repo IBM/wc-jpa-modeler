@@ -1,0 +1,25 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="TAGDPLYREL">
+		<Column columnName="TAGNAME" type="VARCHAR" length="40" nullable="false"/>
+		<ForeignKey parentTableName="TAGCLASS">
+			<Member columnName="TAGNAME" referencedColumnName="TAGNAME"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TAGDISPLAY">
+			<Member columnName="DISPLAYNAME" referencedColumnName="DISPLAYNAME"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

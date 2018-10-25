@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="BUYERPO">
+		<Column columnName="ACCOUNT_ID" nullable="true"/>
+		<ForeignKey parentTableName="ACCOUNT">
+			<Member columnName="ACCOUNT_ID" referencedColumnName="ACCOUNT_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

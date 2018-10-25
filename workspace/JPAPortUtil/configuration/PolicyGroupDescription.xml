@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="ACPLGPDESC">
+		<Column columnName="DISPLAYNAME" type="VARCHAR" length="700" nullable="false"/>
+		<Column columnName="DESCRIPTION" type="VARCHAR" length="700" nullable="true"/>
+		<ForeignKey parentTableName="ACPOLGRP">
+			<Member columnName="ACPOLGRP_ID" referencedColumnName="ACPOLGRP_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

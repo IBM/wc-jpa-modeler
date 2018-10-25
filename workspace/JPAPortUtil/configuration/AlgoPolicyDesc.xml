@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="TFALGPOLDS">
+		<ForeignKey parentTableName="TFALGOPOL">
+			<Member columnName="TFALGOPOL_ID" referencedColumnName="TFALGOPOL_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="DKOFFER">
+		<ForeignKey parentTableName="SETCURR">
+			<Member columnName="CURRENCY" referencedColumnName="SETCCURR"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

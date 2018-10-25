@@ -1,0 +1,28 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="RFQRSPEVAL">
+		<Column columnName="REMARKS" nullable="true"/>
+		<ForeignKey parentTableName="RFQ">
+			<Member columnName="RFQ_ID" referencedColumnName="RFQ_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="RFQRSP">
+			<Member columnName="RFQRSP_ID" referencedColumnName="RFQRSP_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="RFQRSPPROD">
+			<Member columnName="RFQRSPPROD_ID" referencedColumnName="RFQRSPPROD_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

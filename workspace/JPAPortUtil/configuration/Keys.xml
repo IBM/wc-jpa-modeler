@@ -1,0 +1,20 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="KEYS">
+		<Column columnName="TABLENAME" type="VARCHAR" length="18" nullable="false"/>
+		<Column columnName="COLUMNNAME" type="VARCHAR" length="18" nullable="false"/>
+	</Table>
+</PortConfiguration>

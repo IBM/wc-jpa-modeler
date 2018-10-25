@@ -1,0 +1,23 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="POLICYDESC">
+		<Column columnName="DESCRIPTION" type="VARCHAR" length="508" nullable="false"/>
+		<Column columnName="LONGDESCRIPTION" type="VARCHAR" length="4000" nullable="true"/>
+		<ForeignKey parentTableName="POLICY">
+			<Member columnName="POLICY_ID" referencedColumnName="POLICY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

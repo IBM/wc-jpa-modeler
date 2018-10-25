@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ATCHASTLG">
+		<ForeignKey parentTableName="ATCHAST">
+			<Member columnName="ATCHAST_ID" referencedColumnName="ATCHAST_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

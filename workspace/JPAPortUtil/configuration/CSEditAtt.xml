@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="CSEDITATT">
+		<Column columnName="CONNSPECATTVALUE" nullable="true"/>
+		<ForeignKey parentTableName="STORETRANS">
+			<Member columnName="TRANSPORT_ID" referencedColumnName="TRANSPORT_ID"/>
+			<Member columnName="STORE_ID" referencedColumnName="STORE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

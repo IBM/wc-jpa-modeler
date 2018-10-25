@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ATTRIBUTE">
+		<ForeignKey parentTableName="ATTRTYPE">
+			<Member columnName="ATTRTYPE_ID" referencedColumnName="ATTRTYPE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

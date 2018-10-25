@@ -1,0 +1,33 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="ORDPAYMTHD">
+		<ForeignKey parentTableName="ACCOUNT">
+			<Member columnName="ACCOUNT_ID" referencedColumnName="ACCOUNT_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="BUYERPO">
+			<Member columnName="BUYERPO_ID" referencedColumnName="BUYERPO_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="CREDITLINE">
+			<Member columnName="CREDITLINE_ID" referencedColumnName="CREDITLINE_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="ORDERS">
+			<Member columnName="ORDERS_ID" referencedColumnName="ORDERS_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="PAYSUMMARY">
+			<Member columnName="PAYSUMMARY_ID" referencedColumnName="PAYSUMMARY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

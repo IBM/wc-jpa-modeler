@@ -1,0 +1,24 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="ORDSHIPHST">
+		<ForeignKey parentTableName="RECEIPT">
+			<Member columnName="RECEIPT_ID" referencedColumnName="RECEIPT_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="VERSIONSPC">
+			<Member columnName="VERSIONSPC_ID" referencedColumnName="VERSIONSPC_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

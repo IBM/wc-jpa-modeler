@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="CMFTSKMBREL">
+		<ForeignKey parentTableName="CMFTASK">
+			<Member columnName="CMFTASK_ID" referencedColumnName="CMFTASK_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

@@ -1,0 +1,26 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="USERPVCDEV">
+		<ForeignKey parentTableName="PVCSESSION">
+			<Member columnName="PVCSESSION_ID" referencedColumnName="PVCSESSION_ID"/>
+		</ForeignKey>
+	</Table>
+	<Table tableName="USERPVCDEV">
+		<ForeignKey parentTableName="TRANSPORT">
+			<Member columnName="TRANSPORT_ID" referencedColumnName="TRANSPORT_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

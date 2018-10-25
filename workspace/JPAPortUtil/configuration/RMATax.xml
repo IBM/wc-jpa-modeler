@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="RMATAX">
+		<ForeignKey parentTableName="RMA">
+			<Member columnName="RMA_ID" referencedColumnName="RMA_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

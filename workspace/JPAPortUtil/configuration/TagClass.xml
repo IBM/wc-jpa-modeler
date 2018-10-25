@@ -1,0 +1,21 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="TAGCLASS">
+		<Column columnName="TAGNAME" type="VARCHAR" length="40" nullable="false"/>
+		<Column columnName="TAGCLASSNAME" type="VARCHAR" length="254" nullable="false"/>
+		<Column columnName="DESCRIPTION" type="VARCHAR" length="254" nullable="true"/>
+	</Table>
+</PortConfiguration>

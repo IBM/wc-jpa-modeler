@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="CALCODEMGP">
+		<ForeignKey parentTableName="CALCODE">
+			<Member columnName="CALCODE_ID" referencedColumnName="CALCODE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

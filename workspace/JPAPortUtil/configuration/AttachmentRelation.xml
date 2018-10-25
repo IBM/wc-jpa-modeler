@@ -1,0 +1,25 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="ATCHREL">
+		<Column columnName="SEQUENCE" nullable="false"/>
+		<ForeignKey parentTableName="ATCHRLUS">
+			<Member columnName="ATCHRLUS_ID" referencedColumnName="ATCHRLUS_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="ATCHTGT">
+			<Member columnName="ATCHTGT_ID" referencedColumnName="ATCHTGT_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

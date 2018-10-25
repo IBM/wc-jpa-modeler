@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="CATCONFINF">
+		<ForeignKey parentTableName="CATENTRY">
+			<Member columnName="CATENTRY_ID" referencedColumnName="CATENTRY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

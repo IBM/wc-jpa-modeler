@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="CURCVLIST">
+		<Column columnName="DISPLAYSEQ" type="DOUBLE" nullable="false"/>
+		<ForeignKey parentTableName="SETCURR">
+			<Member columnName="COUNTERVALUECURR" referencedColumnName="SETCCURR"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="SETCURR">
+			<Member columnName="CURRSTR" referencedColumnName="SETCCURR"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

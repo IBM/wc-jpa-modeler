@@ -1,0 +1,25 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="ORDIADJUST">
+		<Column columnName="AMOUNT" nullable="false"/>
+		<ForeignKey parentTableName="ORDADJUST">
+			<Member columnName="ORDADJUST_ID" referencedColumnName="ORDADJUST_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="ORDERITEMS">
+			<Member columnName="ORDERITEMS_ID" referencedColumnName="ORDERITEMS_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

@@ -1,0 +1,24 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="GRPURREC">
+		<Column columnName="ADDRESS_ID" type="BIGINT" nullable="true"/>
+		<Column columnName="GIFTREGISTRY_ID" type="BIGINT" nullable="false"/>
+		<Column columnName="PURCHASERECORD_ID" type="BIGINT" nullable="false"/>
+		<Column columnName="ORDERITEMID" type="BIGINT" nullable="true"/>
+		<Column columnName="GIFTITEM_ID" type="BIGINT" nullable="true"/>
+		<Column columnName="PURCHASEDATE" type="DATE" length="10" nullable="false"/>
+	</Table>
+</PortConfiguration>

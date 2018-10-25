@@ -1,0 +1,26 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="SHDCACRM">
+		<ForeignKey parentTableName="EMSPOT">
+			<Member columnName="ESPOT_ID" referencedColumnName="EMSPOT_ID"/>
+		</ForeignKey>
+	</Table>
+	<Table tableName="SHDCACRM">
+		<ForeignKey parentTableName="INTVSCHED">
+			<Member columnName="SCHED_ID" referencedColumnName="INTVSCHED_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

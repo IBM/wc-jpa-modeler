@@ -1,0 +1,28 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="NOTIFY">
+		<Column columnName="TRANSPORT_ID" nullable="true"/>
+		<Column columnName="NOTIFICATIONID" nullable="true"/>
+		<Column columnName="TRANSPORTATTNAME" nullable="true"/>
+		<Column columnName="TRANSPORTATTVALUE" nullable="true"/>
+		<ForeignKey parentTableName="MSGTYPES">
+			<Member columnName="MSGTYPE_ID" referencedColumnName="MSGTYPE_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TRANSPORT">
+			<Member columnName="TRANSPORT_ID" referencedColumnName="TRANSPORT_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

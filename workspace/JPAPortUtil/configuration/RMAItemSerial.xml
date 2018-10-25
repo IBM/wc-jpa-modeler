@@ -1,0 +1,24 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="RMAITEMSERIAL">
+		<ForeignKey parentTableName="RMAITEM">
+			<Member columnName="RMAITEM_ID" referencedColumnName="RMAITEM_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="RMAITEMCMP">
+			<Member columnName="RMAITEMCMP_ID" referencedColumnName="RMAITEMCMP_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

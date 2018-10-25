@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ORDITEMCONF">
+		<ForeignKey parentTableName="MANIFEST">
+			<Member columnName="MANIFEST_ID" referencedColumnName="MANIFEST_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

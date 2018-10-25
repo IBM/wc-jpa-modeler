@@ -1,0 +1,20 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="PPCPAYINST">
+		<Column columnName="CURRENCY" type="CHAR" length="3" nullable="false"/>
+		<Column columnName="ACCOUNTNUMBER" type="VARCHAR" length="512" nullable="true"/>
+	</Table>
+</PortConfiguration>

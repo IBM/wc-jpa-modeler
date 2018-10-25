@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="ORDERITEMS">
+		<Column columnName="ORDERITEMS_ID" type="BIGINT"/>
+		<Column columnName="ALLOCADDRESS_ID" type="BIGINT"/>
+		<Column columnName="ADDRESS_ID" type="BIGINT"/>
+		<Column columnName="CATENTRY_ID" type="BIGINT"/>
+		<Column columnName="ITEMSPC_ID" type="BIGINT"/>
+		<Column columnName="MEMBER_ID" type="BIGINT"/>
+		<Column columnName="OFFER_ID" type="BIGINT"/>
+		<Column columnName="ORDERS_ID" type="BIGINT"/>
+		<Column columnName="OUTPUTQ_ID" type="BIGINT"/>
+		<Column columnName="TERMCOND_ID" type="BIGINT" nullable="true"/>
+		<Column columnName="TRADING_ID" type="BIGINT"/>
+		<Column columnName="ALLOCATIONGROUP" type="BIGINT"/>
+		<Column columnName="CORRELATIONGROUP" type="BIGINT"/>
+		<Column columnName="INVENTORYSTATUS" nullable="false"/>
+		<Column columnName="FULFILLMENTSTATUS" nullable="false"/>
+		<Column columnName="ISEXPEDITED" nullable="false"/>
+		<Column columnName="TIECODE" nullable="true"/>
+	</Table>
+</PortConfiguration>

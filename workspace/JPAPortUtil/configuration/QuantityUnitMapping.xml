@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="QTYUNITMAP">
+		<ForeignKey parentTableName="QTYUNIT">
+			<Member columnName="QTYUNIT_ID" referencedColumnName="QTYUNIT_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

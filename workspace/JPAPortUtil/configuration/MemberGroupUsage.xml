@@ -1,0 +1,24 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="MBRGRPUSG">
+		<ForeignKey parentTableName="MBRGRP">
+			<Member columnName="MBRGRP_ID" referencedColumnName="MBRGRP_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="MBRGRPTYPE">
+			<Member columnName="MBRGRPTYPE_ID" referencedColumnName="MBRGRPTYPE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

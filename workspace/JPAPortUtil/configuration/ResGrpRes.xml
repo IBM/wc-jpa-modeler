@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ACRESGPRES">
+		<ForeignKey parentTableName="ACRESGRP">
+			<Member columnName="ACRESGRP_ID" referencedColumnName="ACRESGRP_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

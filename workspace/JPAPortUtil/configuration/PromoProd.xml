@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="CPPMNPROD">
+		<ForeignKey parentTableName="CPPMN">
+			<Member columnName="CPPMN_ID" referencedColumnName="CPPMN_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

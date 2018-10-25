@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="TFTRENGDSC">
+		<ForeignKey parentTableName="TFTRADENG">
+			<Member columnName="TFTRADENG_ID" referencedColumnName="TFTRADENG_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

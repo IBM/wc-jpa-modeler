@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="JPA Port Category"
+            id="JPAPortUtil.commands.category">
+      </category>
+      <command
+            name="Restore"
+            categoryId="JPAPortUtil.commands.category"
+            id="JPAPortUtil.commands.restoreCommand">
+      </command>
+      <command
+            name="Generate JPA Entities"
+            categoryId="JPAPortUtil.commands.category"
+            id="JPAPortUtil.commands.generateJPAEntitiesCommand">
+      </command>
+      <command
+            name="Update Entity References"
+            categoryId="JPAPortUtil.commands.category"
+            id="JPAPortUtil.commands.updateEntityReferencesCommand">
+      </command>
+      <command
+            name="Binary Entity Search"
+            categoryId="JPAPortUtil.commands.category"
+            id="JPAPortUtil.commands.binaryEntitySearchCommand">
+      </command>
+      <command
+            name="Access Bean Subclass Search"
+            categoryId="JPAPortUtil.commands.category"
+            id="JPAPortUtil.commands.accessBeanSubclassSearchCommand">
+      </command> 
+      <command
+            name="Entity Reference Search"
+            categoryId="JPAPortUtil.commands.category"
+            id="JPAPortUtil.commands.entityReferenceSearchCommand">
+      </command>
+            <command
+            name="Entity Reference Subclass Search"
+            categoryId="JPAPortUtil.commands.category"
+            id="JPAPortUtil.commands.entityReferenceSubclassSearchCommand">
+      </command>
+      <command
+            name="Replace Entity Beans"
+            categoryId="JPAPortUtil.commands.category"
+            id="JPAPortUtil.commands.replaceEjbsCommand">
+      </command>
+      <command
+            name="Restore Entity Beans"
+            categoryId="JPAPortUtil.commands.category"
+            id="JPAPortUtil.commands.restore3Command">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="JPAPortUtil.commands.restoreCommand"
+            class="com.ibm.commerce.jpa.port.handlers.RestoreHandler">
+      </handler>
+      <handler
+            commandId="JPAPortUtil.commands.restore3Command"
+            class="com.ibm.commerce.jpa.port.handlers.Restore3Handler">
+      </handler>
+      <handler
+            commandId="JPAPortUtil.commands.generateJPAEntitiesCommand"
+            class="com.ibm.commerce.jpa.port.handlers.JPAPortUtilHandler">
+      </handler>
+      <handler
+            commandId="JPAPortUtil.commands.updateEntityReferencesCommand"
+            class="com.ibm.commerce.jpa.port.handlers.EntityReferencePortHandler">
+      </handler>
+      <handler
+            commandId="JPAPortUtil.commands.binaryEntitySearchCommand"
+            class="com.ibm.commerce.jpa.port.handlers.BinaryEntitySearchHandler">
+      </handler>
+      <handler
+            commandId="JPAPortUtil.commands.accessBeanSubclassSearchCommand"
+            class="com.ibm.commerce.jpa.port.handlers.AccessBeanSubclassSearchHandler">
+      </handler>
+      <handler
+            commandId="JPAPortUtil.commands.entityReferenceSearchCommand"
+            class="com.ibm.commerce.jpa.port.handlers.EntityReferenceSearchHandler">
+      </handler>
+      <handler
+            commandId="JPAPortUtil.commands.entityReferenceSubclassSearchCommand"
+            class="com.ibm.commerce.jpa.port.handlers.EntityReferenceSubclassSearchHandler">
+      </handler>
+      <handler
+            commandId="JPAPortUtil.commands.replaceEjbsCommand"
+            class="com.ibm.commerce.jpa.port.handlers.ReplaceEjbsHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="JPAPortUtil.commands.generateJPAEntitiesCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="WCE JPA Tool"
+               mnemonic="J"
+               id="JPAPortUtil.menus.jpaMenu">
+            <command
+                  commandId="JPAPortUtil.commands.restoreCommand"
+                  mnemonic="R"
+                  id="JPAPortUtil.menus.restoreCommand">
+            </command>
+            <command
+                  commandId="JPAPortUtil.commands.generateJPAEntitiesCommand"
+                  mnemonic="G"
+                  id="JPAPortUtil.menus.generateJPAEntitiesCommand">
+            </command>
+            <!--
+            <command
+                  commandId="JPAPortUtil.commands.binaryEntitySearchCommand"
+                  mnemonic="B"
+                  id="JPAPortUtil.menus.binaryEntitySearchCommand">
+            </command>
+            <command
+                  commandId="JPAPortUtil.commands.accessBeanSubclassSearchCommand"
+                  mnemonic="A"
+                  id="JPAPortUtil.menus.accessBeanSubclassSearchCommand">
+            </command>
+            -->
+            <!--
+            <command
+                  commandId="JPAPortUtil.commands.entityReferenceSearchCommand"
+                  mnemonic="S"
+                  id="JPAPortUtil.menus.entityReferenceSearchCommand">
+            </command>
+            <command
+                  commandId="JPAPortUtil.commands.entityReferenceSubclassSearchCommand"
+                  mnemonic="S"
+                  id="JPAPortUtil.menus.entityReferenceSubclassSearchCommand">
+            </command>
+            <command
+                  commandId="JPAPortUtil.commands.updateEntityReferencesCommand"
+                  mnemonic="U"
+                  id="JPAPortUtil.menus.updateEntityReferencesCommand">
+            </command>
+            -->
+            <command
+                  commandId="JPAPortUtil.commands.replaceEjbsCommand"
+                  mnemonic="E"
+                  id="JPAPortUtil.menus.replaceEjbsCommand">
+            </command>
+            <command
+                  commandId="JPAPortUtil.commands.restore3Command"
+                  mnemonic="R"
+                  id="JPAPortUtil.menus.restore3Command">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

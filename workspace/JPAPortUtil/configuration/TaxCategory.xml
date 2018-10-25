@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="TAXCGRY">
+		<ForeignKey parentTableName="TAXTYPE">
+			<Member columnName="TAXTYPE_ID" referencedColumnName="TAXTYPE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

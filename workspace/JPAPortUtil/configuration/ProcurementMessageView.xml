@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="PROCMSGVW">
+		<ForeignKey parentTableName="PROCPROTCL">
+			<Member columnName="PROCPROTCL_ID" referencedColumnName="PROCPROTCL_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

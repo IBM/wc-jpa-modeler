@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="PURCHASELT">
+		<ForeignKey parentTableName="TERMCOND">
+			<Member columnName="TERMCOND_ID" referencedColumnName="TERMCOND_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

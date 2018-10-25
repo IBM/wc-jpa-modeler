@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="PPCPAYTRAN">
+		<ForeignKey parentTableName="PPCBATCH">
+			<Member columnName="PPCBATCH_ID" referencedColumnName="PPCBATCH_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

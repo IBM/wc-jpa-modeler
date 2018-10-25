@@ -1,0 +1,24 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+<!-- 
+There are two beans for this table - one in Marketing-CampaignsAndScenarioMarketingData and on in Order-OrderCaptureData - comment out this releationship for now
+	<Table tableName="ORDERMGP">
+		<ForeignKey parentTableName="ORDERS">
+			<Member columnName="ORDERS_ID" referencedColumnName="ORDERS_ID"/>
+		</ForeignKey>
+	</Table>
+-->
+</PortConfiguration>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2014, 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="EDPPAYHIST">
+		<Column columnName="STORE_ID" nullable="true"/>
+		<Column columnName="AMOUNT" nullable="false"/>
+		<Column columnName="FIELD2" type="VARCHAR" length="254" nullable="true"/>
+		<Column columnName="FIELD3" type="VARCHAR" length="254" nullable="true"/>
+	</Table>
+</PortConfiguration>

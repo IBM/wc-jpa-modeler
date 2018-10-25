@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="STCGRYDESC">
+		<ForeignKey parentTableName="STORECGRY">
+			<Member columnName="STORECGRY_ID" referencedColumnName="STORECGRY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

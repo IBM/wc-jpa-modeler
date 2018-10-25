@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="CERT_X509">
+		<Column columnName="CTISSORGNM" type="CHAR" length="200" nullable="false"/>
+		<Column columnName="CTSBJORGNM" nullable="false"/>
+		<ForeignKey parentTableName="USERS">
+			<Member columnName="USERS_ID" referencedColumnName="USERS_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

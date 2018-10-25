@@ -1,0 +1,30 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="SHPJCRULE">
+		<ForeignKey parentTableName="CALRULE">
+			<Member columnName="CALRULE_ID" referencedColumnName="CALRULE_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="FFMCENTER">
+			<Member columnName="FFMCENTER_ID" referencedColumnName="FFMCENTER_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="JURSTGROUP">
+			<Member columnName="JURSTGROUP_ID" referencedColumnName="JURSTGROUP_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="SHIPMODE">
+			<Member columnName="SHIPMODE_ID" referencedColumnName="SHIPMODE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

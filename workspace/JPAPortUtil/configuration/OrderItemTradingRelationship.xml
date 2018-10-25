@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ORDITRD">
+		<ForeignKey parentTableName="ORDERITEMS">
+			<Member columnName="ORDERITEMS_ID" referencedColumnName="ORDERITEMS_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

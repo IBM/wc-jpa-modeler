@@ -1,0 +1,27 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="MBRROLE">
+		<ForeignKey parentTableName="MEMBER">
+			<Member columnName="MEMBER_ID" referencedColumnName="MEMBER_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="ORGENTITY">
+			<Member columnName="ORGENTITY_ID" referencedColumnName="ORGENTITY_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="ROLE">
+			<Member columnName="ROLE_ID" referencedColumnName="ROLE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

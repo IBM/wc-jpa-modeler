@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="BASEITMDSC">
+		<ForeignKey parentTableName="BASEITEM">
+			<Member columnName="BASEITEM_ID" referencedColumnName="BASEITEM_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

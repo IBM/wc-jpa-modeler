@@ -1,0 +1,24 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="GRGFTREG">
+		<Column columnName="GIFTREGISTRY_ID" type="BIGINT" nullable="false"/>
+		<Column columnName="PREEVENTADDRESS_ID" type="BIGINT" nullable="false"/>
+		<Column columnName="POSTEVENTADDRESS_ID" type="BIGINT" nullable="false"/>
+		<Column columnName="EVENTDATE" type="DATE" length="10" nullable="false"/>
+		<Column columnName="DESCRIPTION" type="VARCHAR" length="254" nullable="true"/>
+		<Column columnName="NAME" type="VARCHAR" length="64" nullable="true"/>
+	</Table>
+</PortConfiguration>

@@ -1,0 +1,21 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="GRRGSTRNT">
+		<Column columnName="GIFTREGISTRY_ID" type="BIGINT" nullable="false"/>
+		<Column columnName="REGISTRANT_ID" type="BIGINT" nullable="false"/>
+		<Column columnName="ADDRESS_ID" type="BIGINT" nullable="false"/>
+	</Table>
+</PortConfiguration>

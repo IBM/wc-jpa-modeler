@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="VENDORDESC">
+		<ForeignKey parentTableName="VENDOR">
+			<Member columnName="VENDOR_ID" referencedColumnName="VENDOR_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

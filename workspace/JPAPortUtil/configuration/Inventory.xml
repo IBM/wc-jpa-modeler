@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="INVENTORY">
+		<ForeignKey parentTableName="FFMCENTER">
+			<Member columnName="FFMCENTER_ID" referencedColumnName="FFMCENTER_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="TICKLER">
+		<ForeignKey parentTableName="TKLRREASON">
+			<Member columnName="TKLRREASON_ID" referencedColumnName="TKLRREASON_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="TKLRACTDSC">
+		<ForeignKey parentTableName="TKLRACTION">
+			<Member columnName="TKLRACTION_ID" referencedColumnName="TKLRACTION_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

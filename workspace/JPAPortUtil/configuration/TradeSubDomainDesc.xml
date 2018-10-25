@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="TFSBDOMDSC">
+		<ForeignKey parentTableName="TFSBDOMAIN">
+			<Member columnName="TFSBDOMAIN_ID" referencedColumnName="TFSBDOMAIN_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

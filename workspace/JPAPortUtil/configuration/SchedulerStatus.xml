@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="SCHSTATUS">
+		<ForeignKey parentTableName="SCHCONFIG">
+			<Member columnName="SCSJOBNBR" referencedColumnName="SCCJOBREFNUM"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

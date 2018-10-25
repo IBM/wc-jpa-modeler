@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ACCCUSTEXC">
+		<ForeignKey parentTableName="ACCCMDGRP">
+			<Member columnName="ACCCMDGRP_ID" referencedColumnName="ACCCMDGRP_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

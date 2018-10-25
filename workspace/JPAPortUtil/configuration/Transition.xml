@@ -1,0 +1,30 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="FLTRANSITN">
+		<ForeignKey parentTableName="FLOW">
+			<Member columnName="FLOW_ID" referencedColumnName="FLOW_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="FLOWTYPE">
+			<Member columnName="SPAWNFLWTYPE_ID" referencedColumnName="FLOWTYPE_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="FLSTATEDCT">
+			<Member columnName="SOURCESTATE_ID" referencedColumnName="FLSTATEDCT_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="FLSTATEDCT">
+			<Member columnName="TARGETSTATE_ID" referencedColumnName="FLSTATEDCT_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

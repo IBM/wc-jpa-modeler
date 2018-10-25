@@ -1,0 +1,24 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="TRDATTACH">
+		<ForeignKey parentTableName="ATTACHMENT">
+			<Member columnName="ATTACHMENT_ID" referencedColumnName="ATTACHMENT_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TRADING">
+			<Member columnName="TRADING_ID" referencedColumnName="TRADING_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

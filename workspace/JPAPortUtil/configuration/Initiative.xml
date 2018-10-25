@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="INITIATIVE">
+		<ForeignKey parentTableName="CAMPAIGN">
+			<Member columnName="CAMPAIGN_ID" referencedColumnName="CAMPAIGN_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

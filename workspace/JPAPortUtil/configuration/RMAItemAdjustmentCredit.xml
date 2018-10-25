@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="RMAIADJCRD">
+		<ForeignKey parentTableName="RMAITEM">
+			<Member columnName="RMAITEM_ID" referencedColumnName="RMAITEM_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

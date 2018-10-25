@@ -1,0 +1,24 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="SUBORDTAX">
+		<ForeignKey parentTableName="SUBORDERS">
+			<Member columnName="SUBORDER_ID" referencedColumnName="SUBORDER_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TAXCGRY">
+			<Member columnName="TAXCGRY_ID" referencedColumnName="TAXCGRY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

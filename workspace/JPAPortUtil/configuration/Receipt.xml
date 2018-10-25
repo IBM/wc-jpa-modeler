@@ -1,0 +1,31 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="RECEIPT">
+		<Column columnName="CREATETIME" nullable="false"/>
+		<ForeignKey parentTableName="FFMCENTER">
+			<Member columnName="FFMCENTER_ID" referencedColumnName="FFMCENTER_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="RADETAIL">
+			<Member columnName="RADETAIL_ID" referencedColumnName="RADETAIL_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="VENDOR">
+			<Member columnName="VENDOR_ID" referencedColumnName="VENDOR_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="VERSIONSPC">
+			<Member columnName="VERSIONSPC_ID" referencedColumnName="VERSIONSPC_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

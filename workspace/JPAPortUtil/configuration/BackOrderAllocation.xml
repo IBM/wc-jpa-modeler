@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="BKORDALLOC">
+		<ForeignKey parentTableName="ITEMSPC">
+			<Member columnName="ITEMSPC_ID" referencedColumnName="ITEMSPC_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

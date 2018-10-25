@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="RFQTARGET">
+		<ForeignKey parentTableName="RFQ">
+			<Member columnName="RFQ_ID" referencedColumnName="RFQ_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

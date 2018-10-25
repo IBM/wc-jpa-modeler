@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="ACPLGPSUBS">
+		<ForeignKey parentTableName="ACPOLGRP">
+			<Member columnName="ACPOLGRP_ID" referencedColumnName="ACPOLGRP_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

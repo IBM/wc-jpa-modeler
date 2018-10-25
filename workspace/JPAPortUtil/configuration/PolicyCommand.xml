@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="POLICYCMD">
+		<ForeignKey parentTableName="POLICY">
+			<Member columnName="POLICY_ID" referencedColumnName="POLICY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

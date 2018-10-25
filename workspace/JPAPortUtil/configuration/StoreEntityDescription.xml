@@ -1,0 +1,28 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="STOREENTDS">
+		<Column columnName="DISPLAYNAME" type="VARCHAR" length="254" nullable="true"/>
+		<ForeignKey parentTableName="STOREENT">
+			<Member columnName="STOREENT_ID" referencedColumnName="STOREENT_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="STADDRESS">
+			<Member columnName="STADDRESS_ID_CONT" referencedColumnName="STADDRESS_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="STADDRESS">
+			<Member columnName="STADDRESS_ID_LOC" referencedColumnName="STADDRESS_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

@@ -1,0 +1,36 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="TFALGOREG">
+		<ForeignKey parentTableName="TFALGOTYPE">
+			<Member columnName="TFALGOTYPE_ID" referencedColumnName="TFALGOTYPE_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TFDOMAIN">
+			<Member columnName="TFDOMAIN_ID" referencedColumnName="TFDOMAIN_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TFSBDOMAIN">
+			<Member columnName="TFSBDOMAIN_ID" referencedColumnName="TFSBDOMAIN_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TFALGOPOL">
+			<Member columnName="PRICEPOL" referencedColumnName="TFALGOPOL_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TFALGOPOL">
+			<Member columnName="MATCHPOL" referencedColumnName="TFALGOPOL_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TFALGOPOL">
+			<Member columnName="ALLOCPOL" referencedColumnName="TFALGOPOL_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

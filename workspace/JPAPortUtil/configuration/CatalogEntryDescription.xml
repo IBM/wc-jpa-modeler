@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2014, 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="CATENTDESC">
+		<Column columnName="NAME" type="CHAR" length="128" nullable="true"/>
+		<ForeignKey parentTableName="CATENTRY">
+			<Member columnName="CATENTRY_ID" referencedColumnName="CATENTRY_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

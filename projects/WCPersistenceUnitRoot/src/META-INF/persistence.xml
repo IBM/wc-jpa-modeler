@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright 2018
+ 
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="WC">
+		<jta-data-source>jdbc/WebSphere Commerce Cloudscape DataSource demo</jta-data-source>
+		<jar-file>../Enablement-BaseComponentsData.jar</jar-file>
+		<jar-file>../Order-DOMIntegrationData.jar</jar-file>
+		<jar-file>../Enablement-TicklerData.jar</jar-file>
+		<jar-file>../Enablement-IntegrationData.jar</jar-file>
+		<jar-file>../Payments-Plugin-Controller.jar</jar-file>
+		<jar-file>../Member-MemberManagementData.jar</jar-file>
+		<jar-file>../GiftRegistry-BaseComponentData.jar</jar-file>
+		<jar-file>../Payments-EDP-Data.jar</jar-file>
+		<jar-file>../Enablement-BusinessContextEngineData.jar</jar-file>
+		<jar-file>../Enablement-BusinessContextEngineAdvancedData.jar</jar-file>
+		<jar-file>../Trading-AuctionsAndRFQsData.jar</jar-file>
+		<jar-file>../GiftRegistry-OrderIntegrationData.jar</jar-file>
+		<jar-file>../ContentManagement-WorkspaceFlowData.jar</jar-file>
+		<jar-file>../Catalog-ProductManagementData.jar</jar-file>
+		<jar-file>../Marketing-ExperimentationManagementData.jar</jar-file>
+		<jar-file>../Merchandising-PromotionsAndDiscountsData.jar</jar-file>
+		<jar-file>../Marketing-CampaignsAndScenarioMarketingData.jar</jar-file>
+		<jar-file>../Enablement-RelationshipManagementData.jar</jar-file>
+		<jar-file>../Order-OrderManagementData.jar</jar-file>
+		<jar-file>../Order-OrderCaptureData.jar</jar-file>
+		<properties>
+			<property name="openjpa.jdbc.DBDictionary" value="storeCharsAsNumbers=false"/>
+			<property name="openjpa.Multithreaded" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>

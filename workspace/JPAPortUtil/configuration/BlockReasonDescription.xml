@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="BLKRSNDESC">
+		<ForeignKey parentTableName="BLKRSNCODE">
+			<Member columnName="BLKRSNCODE_ID" referencedColumnName="BLKRSNCODE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

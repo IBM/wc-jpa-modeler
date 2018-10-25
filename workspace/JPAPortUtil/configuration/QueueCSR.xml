@@ -1,0 +1,7 @@
+<PortConfiguration>
+	<Table tableName="QUEUECSR">
+		<ForeignKey parentTableName="QUEUE">
+			<Member columnName="QUEUE_ID" referencedColumnName="QUEUE_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

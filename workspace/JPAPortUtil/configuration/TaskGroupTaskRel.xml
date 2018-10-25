@@ -1,0 +1,24 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="CMFTGTSKREL">
+		<ForeignKey parentTableName="CMFTASK">
+			<Member columnName="CMFTASK_ID" referencedColumnName="CMFTASK_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="CMFTASKGRP">
+			<Member columnName="CMFTASKGRP_ID" referencedColumnName="CMFTASKGRP_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

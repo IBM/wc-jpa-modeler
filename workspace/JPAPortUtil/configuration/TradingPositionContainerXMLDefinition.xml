@@ -1,0 +1,22 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="TRDPSCNXML">
+		<Column columnName="XMLDEFINITION" type="CLOB" length="2147483647" nullable="true"/>
+		<ForeignKey parentTableName="TRADEPOSCN">
+			<Member columnName="TRADEPOSCN_ID" referencedColumnName="TRADEPOSCN_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

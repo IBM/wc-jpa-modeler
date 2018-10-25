@@ -1,0 +1,33 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="TFEXTENG">
+	<!--
+		The types don't match - in the parent table it's an INTEGER - here it's a BIG INTEGER 
+		<ForeignKey parentTableName="TFALGOREG">
+			<Member columnName="TFALGOREG_ID" referencedColumnName="TFALGOREG_ID"/>
+		</ForeignKey>
+	-->
+		<ForeignKey parentTableName="TFDOMAIN">
+			<Member columnName="TFDOMAIN_ID" referencedColumnName="TFDOMAIN_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TFSBDOMAIN">
+			<Member columnName="TFSBDOMAIN_ID" referencedColumnName="TFSBDOMAIN_ID"/>
+		</ForeignKey>
+		<ForeignKey parentTableName="TFTRADENG">
+			<Member columnName="TFTRADENG_ID" referencedColumnName="TFTRADENG_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>

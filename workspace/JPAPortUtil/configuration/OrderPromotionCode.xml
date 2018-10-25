@@ -1,0 +1,23 @@
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<PortConfiguration>
+	<Table tableName="ORDPROMOCD">
+		<Column columnName="ORDERS_ID" nullable="false"/>
+		<Column columnName="CODE" type="VARCHAR" length="128" nullable="false"/>
+		<ForeignKey parentTableName="ORDERS">
+			<Member columnName="ORDERS_ID" referencedColumnName="ORDERS_ID"/>
+		</ForeignKey>
+	</Table>
+</PortConfiguration>
