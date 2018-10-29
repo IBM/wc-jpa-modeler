@@ -3,10 +3,10 @@
 This project is used to migrate your WebSphere Commerce Version 8 EJBs to Version 9 JPA Entities, and change the code that depends on those changes, including class references, method references, and exceptions.
 
 # Overview
-  WebSphere Commerce v9 requires a migration from Enterprise Java Bean entities to Java Persistence API entities. In order to make this mandatory migration faster and more accurate, a tool is available to automatically perform this conversion via an Eclipse plugin.  The tool will convert EJB entities as well as access beans.  This document will provide instructions on how to install and configure this plugin, as well as how to execute the various steps to perform the migration of these entities.
+  WebSphere Commerce Version 9 requires a migration from Enterprise Java Bean entities to Java Persistence API entities. In order to make this mandatory migration faster and more accurate, a tool is available to automatically perform this conversion via an Eclipse plugin.  The tool will convert EJB entities as well as access beans.  This document will provide instructions on how to install and configure this plugin, as well as how to execute the various steps to perform the migration of these entities.
 
 # Installation
-  The tool is provided in the format of an Eclipse plugin.  Eclipse plugins are packaged as jars and can be installed by placing the jar file in a monitored directory called "dropins".  Complete the following steps to install and configure the plugin in a WC v8 Toolkit:
+  The tool is provided in the format of an Eclipse plugin.  Eclipse plugins are packaged as jars and can be installed by placing the jar file in a monitored directory called "dropins".  Complete the following steps to install and configure the plugin in a WebSphere Commerce Developer Version 8 or Version 9 environment:
   1. Download the [WCJPA_plugin.zip](WCJPA_plugin.zip) package. 
   2. Extract the package to a temporary directory.
   3. Copy the plug-in JAR file to the following directory. If a subdirectory does not exist, create it. 
@@ -17,13 +17,15 @@ This project is used to migrate your WebSphere Commerce Version 8 EJBs to Versio
   5. Notice the new menu item "WCE JPA Tool"
 
 # Configuration
+  If you are using WebSphere Commerce Version 9, you can skip this section and proceed to generating and replacing the JPA entities.
+  
   The tool will generate JPA entities within the same project and package as the matching EJB entity.  It is very important that everything compile before and during the generation process. Add the WebSphere Commerce JPA entity base classes to the classpath of ALL projects that contain EJB entity beans:
 
   1. Right click on the project in the Navigator/Project Explorer/Enterprise Explorer and select Properties
   2. Select Java Build Path from the Properties tree on the left side.
   3. Select the Libraries tab.
   4. Click on the "Add External JARs..." button.
-  5. Navigate to the location of the V9 VERSION of the Enablement-BaseComponentsData.jar file. Select the jar and click on OK.
+  5. Navigate to the location of the WebSphere Commerce Version 9 version of the Enablement-BaseComponentsData.jar file. Select the jar and click on OK.
   6. Click on the Order and Export tab.  
   7. Select the Enablement-BaseComponentsData.jar file from the list and click on the Up button to move it to the very top of the list.
   8. Check the box next to the Enablement-BaseComponentsData.jar file to export the jar file to including projects.
