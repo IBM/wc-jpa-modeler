@@ -32,11 +32,11 @@ This project is used to migrate your WebSphere Commerce Version 8 EJBs to Versio
 # Generate and Replace JPA Entities
   There JPA migration is broken down into two steps.
   
-  The first step is to generate the JPA entities.  The generation can be invoked by selecting the WCE JPA Tool -> Generate JPA Entities menu item.  JPA entities and access beans will be generated and placed in the same package as the matching EJB entity.  They will be named identical to the EJB entity, but will have a suffix of "JPA" initially.  After this step is complete, you should verify that all of the generated code compiled cleanly.  
+  1. *Generate the JPA entities*  The _generation_ can be invoked by selecting the WCE JPA Tool -> Generate JPA Entities menu item. JPA entities and access beans will be generated and placed in the same package as the matching EJB entity.  They will be named identical to the EJB entity, but will have a suffix of "JPA" initially.  After this step is complete, you should verify that all of the generated code compiled cleanly.  
 
   If there are errors in your EJB metadata, or your EJBs do not follow WC best practices, manual updates to the generated code may be necessary.  You may see a warning dialog popup during the execution of the generation step.  The tool attempts to display warnings in this dialog about discrepancies found in the EJB and DB schema metadata files that could impact the generated code.  If you see this warning, it is highly recommended to resolve the issues noted in the warning and run this step again before proceeding.
 
-  The second step is to delete the EJB and access beans and to rename the JPA entities by removing the "JPA" suffix.  This step can be invoked by selecting the "WCE JPA Tool → Replace EJBs" menu item.  When this step completes, verify that your entities are now JPA entities instead of EJB entities and that everything compiles cleanly.  
+  2. *Delete and Rename* The _delete and rename_ can be invoked by selecting the WCE JPA Tool -> Replace Entity Beans. The EJBs and access beans will be removed and JPA entities will be renamed by removing the "JPA" suffix that added. When this step completes, verify that your entities are now JPA entities instead of EJB entities and that everything compiles cleanly.  
 
   You can now copy the generated JPA entities into a v9 WC Toolkit.
 
