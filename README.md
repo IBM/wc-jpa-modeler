@@ -1,6 +1,6 @@
 # wc-jpa-modeler
 
-This project is used to migrate your WebSphere Commerce Version 8 EJBs to Version 9 JPA Entities, and change the code that depends on those changes, including class references, method references, and exceptions.
+This project can be used to migrate your WebSphere Commerce Version 8 EJBs to Version 9 JPA Entities, and convert the code that depends on those changes, including class references, method references, and exceptions.
 
 # Overview
   WebSphere Commerce v9 requires a migration from Enterprise Java Bean entities to Java Persistence API entities. In order to make this mandatory migration faster and more accurate, a tool is available to automatically perform this conversion via an Eclipse plugin.  The tool will convert EJB entities as well as access beans.  This document will provide instructions on how to install and configure this plugin, as well as how to execute the various steps to perform the migration of these entities.
